@@ -1,14 +1,27 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sai Gramam</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/glide.core.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container">
@@ -65,8 +78,18 @@
     </nav>
     <!-- Banner Section Start -->
     <div id="banner">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/hero-banner.webp" alt=""></div>
+                <div class="swiper-slide"><img src="images/second-banner.webp" alt=""></div>
+                <div class="swiper-slide"><img src="images/hero-banner.webp" alt=""></div>
+                <div class="swiper-slide"><img src="images/second-banner.webp" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
         <div class="main-img">
             <img src="images/hero-banner.webp" alt="">
+
         </div>
         <div class="container banner-text">
             <div class="overlay">
@@ -88,38 +111,33 @@
             <div class="circle phone-circle">
                 <img src="images/telephone-call 1.svg" alt="">
             </div>
-            <div class="small-circle">
-            </div>
-            <div class="small-circle smc-2">
-            </div>
-            <div class="small-circle">
-            </div>
-            <div class="small-circle">
-            </div>
         </div>
     </div>
     <!-- Banner Section End -->
+
     <!-- About Section Start -->
     <section class="about-section">
         <div class="container position-relative">
             <div class="row">
-                <div class=" col-12 col-lg-2 mx-auto ">
-                    <div class="about-head">
+                <div class=" col-12 col-lg-2 mx-auto " data-aos="fade-top" data-aos-easing="linear"
+                    data-aos-duration="1500">
+                    <div class="about-head ">
                         <h2 class="text-start">Our <br> History</h2>
                         <div class="line"></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="about-img">
+                    <div class="about-img" data-aos="fade-top" data-aos-easing="linear" data-aos-duration="1500">
                         <img src="images/about-img-1.webp" alt="">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <h1>2010
+                    <h1 data-aos="fade-top" data-aos-easing="linear" data-aos-duration="1500">2010
                         <span class="wxtra">2010</span>
                     </h1>
-                    <h3>June 10 2010</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur fortior sit, si illud, quod tute
+                    <h3 data-aos="fade-top" data-aos-duration="1500">June 10 2010</h3>
+                    <p data-aos="fade-top" data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Cur fortior sit, si illud, quod tute
                         concedis, asperum et vix ferendum putabit? Sed utrum hortandus es nobis, Luci, inquit, an etiam
                         tua sponte propensus es? Neque enim civitas in seditione beata esse potest nec in discordia
                         dominorum domus; Omnes, qui non sint sapientes, a</p>
@@ -132,8 +150,54 @@
         </div>
     </section>
     <!-- About Section End -->
-    <!-- Year-line Section Start -->
     <section class="year-line">
+        <div class="container">
+            <div class="center">
+                <div class="dict">
+                    <h3 class="circle">1981</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">1992</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">1998</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">1999</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2010</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2011</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2012</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2013</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2019</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2020</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2021</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2022</h3>
+                </div>
+                <div class="dict">
+                    <h3 class="circle">2023</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Year-line Section Start -->
+
+    <!-- <section class="year-line">
         <div class="container">
             <div class="circle-container">
                 <div class="circle">
@@ -175,10 +239,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Year-line Section End -->
     <!-- Future events start -->
-    <section class="second-banner">
+    <section class="second-banner" data-aos="fade" data-aos-duration="2500">
         <div class="container">
             <div class="sc-banner">
                 <img src="images/second-banner.webp" alt="">
@@ -199,13 +263,13 @@
                     <div class="number-box-main d-flex flex-column gap-1 gap-lg-3">
                         <div class="d-flex gap-1 gap-lg-3">
                             <div class="d-flex flex-column ">
-                                <div class="box-1 box">
+                                <div class="box-1 box" data-aos="fade" data-aos-duration="2500">
                                     <span class="head-number">15</span>
                                     <span class="Sub-year">Years</span>
                                 </div>
                             </div>
                             <div class="d-flex flex-column">
-                                <div class="box-2 box">
+                                <div class="box-2 box" data-aos="fade" data-aos-duration="1000">
                                     <span class="head-number">20</span>
                                     <span class="Sub-year">Free Dialysis Units</span>
                                 </div>
@@ -213,13 +277,13 @@
                         </div>
                         <div class="d-flex gap-1 gap-lg-3">
                             <div class="d-flex flex-column">
-                                <div class="box-3 box">
+                                <div class="box-3 box" data-aos="fade" data-aos-duration="1000">
                                     <span class="head-number">13</span>
                                     <span class="Sub-year">Districts</span>
                                 </div>
                             </div>
                             <div class="d-flex flex-column">
-                                <div class="box-4 box">
+                                <div class="box-4 box" data-aos="fade" data-aos-duration="1000">
                                     <span class="head-number">5</span>
                                     <span class="Sub-year">Lakh+ Free <br> Dialysis</span>
                                 </div>
@@ -236,7 +300,7 @@
         <div class="container">
             <div class="card mb-3">
                 <div class="row g-0">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
                         <div class="card-body">
                             <h3 class="card-title">Founder Message</h3>
                             <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur fortior
@@ -251,7 +315,7 @@
                             <span>Chairman</span>
                         </div>
                     </div>
-                    <div class="col-md-6 position-relative">
+                    <div class="col-md-6 position-relative" data-aos="fade-right" data-aos-duration="3000">
                         <div class="founder-img">
                             <img src="images/founder.webp" class="img-fluid" alt="...">
                         </div>
@@ -265,7 +329,7 @@
     </section>
     <!-- Founder msg end -->
     <!-- Future event start -->
-    <section class="Feature-event">
+    <section class="Feature-event" data-aos="fade-up" data-aos-duration="2500">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -400,7 +464,7 @@
                     <div class="col-md-6">
                         <div class="map-img">
                             <img src="images/keral-2.webp" alt="">
-                            <div class="dist-card">
+                            <div class="dist-card" data-aos="fade-up" data-aos-duration="2500">
                                 <div class="dist-card-top">
                                     <h2>Palakkad</h2>
                                     <div class="close-ico">
@@ -584,12 +648,17 @@
                                         </div>
                                     </div>
                                 </li>
+
                             </ul>
-                            <div class="glide__bullets" data-glide-el="controls[nav]">
-                                <div class="glide__bullet"></div>
-                                <div class="glide__bullet- active"></div>
-                                <div class="glide__bullet"></div>
-                            </div>
+
+                        </div>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"><img src="images/chevron-bar-left.svg"
+                                    alt=""></button>
+                            <button class="glide__bullet" data-glide-dir="=1"><img src="images/chevron-bar-right.svg"
+                                    alt=""></button>
+                            <button class="glide__bullet" data-glide-dir="=2"><img src="images/chevron-bar-right.svg"
+                                    alt=""></button>
                         </div>
                         <div data-glide-el="controls">
                             <button class="slider-prev" data-glide-dir="<">
@@ -605,6 +674,10 @@
         </div>
     </section>
     <!-- Testimonials section Start -->
+    <div class="container position-relative">
+
+    </div>
+
     <!-- Awwards section Start -->
     <section class="awards-section">
         <div class="container">
@@ -623,59 +696,102 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <ul class="d-flex flex-column justify-content-between h-100 mb-0 mt-4 mt-lg-0 pl-0 pl-lg-5">
-                        <li>
-                            <div class="calender-main d-flex align-items-center pt-0">
-                                <div
-                                    class="card-calender cal-card-1 text-end d-flex flex-column align-items-end justify-content-center">
-                                    <span>May</span>
-                                    <h1>2021</h1>
+
+                    <div class="swiper1 mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="calender-main d-flex align-items-center">
+                                    <div
+                                        class="card-calender cal-card-1 text-end d-flex flex-column align-items-end justify-content-center">
+                                        <span>May</span>
+                                        <h1>2021</h1>
+                                    </div>
+                                    <p>
+                                        Asia Book of Records for the maximum free dialysis programs conducted by an NGO
+                                    </p>
+                                    <a href="" class="arrow-right">
+                                        <img src="images/arrow-left (2).svg" alt="">
+                                    </a>
                                 </div>
-                                <p>
-                                    Asia Book of Records for the maximum free dialysis programs conducted by an NGO
-                                </p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="calender-main active d-flex align-items-center">
-                                <div
-                                    class="card-calender cal-card-2 text-end d-flex flex-column align-items-end justify-content-center">
-                                    <span>May</span>
-                                    <h1>2021</h1>
+                            <div class="swiper-slide">
+                                <div class="calender-main d-flex align-items-center">
+                                    <div
+                                        class="card-calender cal-card-2 text-end d-flex flex-column align-items-end justify-content-center">
+                                        <span>May</span>
+                                        <h1>2021</h1>
+                                    </div>
+                                    <p>
+                                        India book of records for <br> maximum free dialysis by an NGO
+                                    </p>
+                                    <a href="" class="arrow-right">
+                                        <img src="images/arrow-left (2).svg" alt="">
+                                    </a>
                                 </div>
-                                <p>
-                                    India book of records for <br> maximum free dialysis by an NGO
-                                </p>
-                                <a href="" class="arrow-right">
-                                    <img src="images/arrow-left (2).svg" alt="">
-                                </a>
                             </div>
-                        </li>
-                        <li>
-                            <div class="calender-main d-flex align-items-center">
-                                <div
-                                    class="card-calender cal-card-3  text-end d-flex flex-column align-items-end justify-content-center">
-                                    <span>June</span>
-                                    <h1>2021</h1>
+                            <div class="swiper-slide">
+                                <div class="calender-main d-flex align-items-center">
+                                    <div
+                                        class="card-calender cal-card-1 text-end d-flex flex-column align-items-end justify-content-center">
+                                        <span>May</span>
+                                        <h1>2021</h1>
+                                    </div>
+                                    <p>
+                                        Asia Book of Records for the maximum free dialysis programs conducted by an NGO
+                                    </p>
+                                    <a href="" class="arrow-right">
+                                        <img src="images/arrow-left (2).svg" alt="">
+                                    </a>
                                 </div>
-                                <p>
-                                    Red Cross State Award for completing 5 lakhs free Dialysis
-                                </p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="calender-main d-flex align-items-center">
-                                <div
-                                    class="card-calender cal-card-4 text-end d-flex flex-column align-items-end justify-content-center">
-                                    <span>November</span>
-                                    <h1>2021</h1>
+                            <div class="swiper-slide">
+                                <div class="calender-main d-flex align-items-center">
+                                    <div
+                                        class="card-calender cal-card-4 text-end d-flex flex-column align-items-end justify-content-center">
+                                        <span>November</span>
+                                        <h1>2021</h1>
+                                    </div>
+                                    <p>
+                                        VidhyadhirajaMemorial State Award for the Best Social Worker in Kerala
+                                    </p>
+                                    <a href="" class="arrow-right">
+                                        <img src="images/arrow-left (2).svg" alt="">
+                                    </a>
                                 </div>
-                                <p>
-                                    VidhyadhirajaMemorial State Award for the Best Social Worker in Kerala
-                                </p>
                             </div>
-                        </li>
-                    </ul>
+                            <div class="swiper-slide">
+                                <div class="calender-main d-flex align-items-center">
+                                    <div
+                                        class="card-calender cal-card-4 text-end d-flex flex-column align-items-end justify-content-center">
+                                        <span>November</span>
+                                        <h1>2021</h1>
+                                    </div>
+                                    <p>
+                                        VidhyadhirajaMemorial State Award for the Best Social Worker in Kerala
+                                    </p>
+                                    <a href="" class="arrow-right">
+                                        <img src="images/arrow-left (2).svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="calender-main d-flex align-items-center">
+                                    <div
+                                        class="card-calender cal-card-4 text-end d-flex flex-column align-items-end justify-content-center">
+                                        <span>November</span>
+                                        <h1>2021</h1>
+                                    </div>
+                                    <p>
+                                        VidhyadhirajaMemorial State Award for the Best Social Worker in Kerala
+                                    </p>
+                                    <a href="" class="arrow-right">
+                                        <img src="images/arrow-left (2).svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -796,5 +912,105 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/glide.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+
+
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            effect: 'fade',
+            speed: 2000,
+            loop: "true",
+            autoplay: {
+                delay: 2100,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper1", {
+            direction: "vertical",
+            slidesPerView: 3,
+            spaceBetween: 10,
+            mousewheel: true,
+
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var calendarMainItems = document.querySelectorAll(".calender-main");
+
+            calendarMainItems.forEach(function (item) {
+                item.addEventListener("click", function () {
+                    // Remove 'clicked' class from all other items
+                    calendarMainItems.forEach(function (otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove("clicked");
+                        }
+                    });
+
+                    // Toggle the 'clicked' class on the clicked item
+                    this.classList.toggle("clicked");
+                });
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('.center').slick({
+                centerMode: true,
+                slidesToShow: 9,
+                // autoplay: true,
+                // autoplaySpeed: 1000,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    }
+                ]
+
+            });
+        });
+
+        AOS.init();
+
+    </script>
 </body>
+
 </html>

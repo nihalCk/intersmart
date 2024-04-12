@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Year-line-Section css start */
+    .year-line {
+      margin-bottom: 250px;
+      margin-top: 100px;
+
+      & .circle-container {
+        display: flex;
+        align-items: center;
+
+        & .circle {
+          width: 85.5px;
+          height: 40px;
+          border-radius: 25px;
+          border: 1px solid #CFCFCF;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          font-family: "poppins";
+          font-weight: var(--regular);
+        }
+
+        & .center-circle {
+          width: 147px;
+          height: 147px;
+          border: 1px solid orange;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        & .circle-2 {
+          width: 124px;
+          height: 124px;
+          border-radius: 50%;
+          background-color: orange;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          font-family: "poppins";
+          font-weight: var(--bold);
+          color: var(--white);
+          border: 1px solid orange;
+        }
+
+        & .line {
+          flex: 1;
+          border-bottom: 1px solid #CFCFCF;
+        }
+      }
+    }
+
+    /* Year-line-Section css End */
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Year-line Section Start -->
+
+  <section class="year-line">
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          1981
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+          1981
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+          1991
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+          1998
+        </div>
+        <div class="line"></div>
+        <div class="center-circle">
+          <div class="circle-2">
+            2010
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+          2011
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+          2013
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+          2022
+        </div>
+        <div class="line"></div>
+        <div class="circle">
+          2023
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Year-line Section End -->
+
+  <swiper-container class="mySwiper" init="false">
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
+
+  <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true">
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
+
+
+
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+</body>
+
+<script>
+  const swiperEl = document.querySelector('swiper-container')
+
+  const params = {
+    injectStyles: [`
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: orange;
+  }
+  `],
+    pagination: {
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  }
+
+  Object.assign(swiperEl, params)
+
+  swiperEl.initialize();
+</script>
+
+</html>
